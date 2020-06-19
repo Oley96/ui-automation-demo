@@ -10,7 +10,7 @@ class MainPage:
 
     def open(self):
         browser.open("/")
-        browser.driver.maximize_window()
+        # browser.driver.maximize_window()
         return self
 
     def click_signIn_button(self):

@@ -1,0 +1,13 @@
+language: python
+
+python:
+  - "3.7"
+
+services:
+  - docker
+
+before_install:
+  - ./selenoid_start.sh
+
+script:
+  - pytest tests/
