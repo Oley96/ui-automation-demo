@@ -45,7 +45,7 @@ def create_remote_driver():
                     "enableVideo": False,
                     "screenResolution": "1280x1024x24"}
 
-    driver = webdriver.Remote(command_executor="http://selenoid:4444/wd/hub",
+    driver = webdriver.Remote(command_executor="http://0.0.0.0:4444/wd/hub",
                               options=options,
                               desired_capabilities=capabilities)
     return driver
