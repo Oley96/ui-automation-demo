@@ -7,6 +7,7 @@ services:
   - docker
 
 before_install:
+  - ifconfig
   - pip install selene --pre
   - sh selenoid_start.sh
 
