@@ -10,4 +10,5 @@ before_install:
   - sh selenoid_start.sh
 
 script:
+  - pip install -r requirements.txt
   - pytest tests/
