@@ -7,9 +7,10 @@ services:
   - docker
 
 before_install:
-  - ifconfig
   - pip install selene --pre
   - sh selenoid_start.sh
 
 script:
-  - pytest tests/
+  - pytest --browser_ver=83.0 tests/
+  - pytest --browser=firefox --browser_ver=77.0 tests/
+
